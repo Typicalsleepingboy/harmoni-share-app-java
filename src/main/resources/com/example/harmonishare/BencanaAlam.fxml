@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.harmonishare.BencanaAlam">
+   <ImageView fitHeight="1080.0" fitWidth="2041.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@image/bencana.jpg" />
+      </image>
+   </ImageView>
+
+    <!-- Questions -->
+    <VBox layoutX="20.0" layoutY="80.0" spacing="20" />
+
+    <!-- Navigation Buttons -->
+    <HBox layoutX="20.0" layoutY="300.0" spacing="20" />
+
+    <!-- Additional Text -->
+    <Text fx:id="welcomeText" />
+     <Label fx:id="question1" layoutX="1191.0" layoutY="238.0" text="Indentitas Korban Bencana">
+      <font>
+         <Font size="33.0" />
+      </font>
+   </Label>
+     <TextField fx:id="answer1" layoutX="1199.0" layoutY="301.0" prefHeight="79.0" prefWidth="425.0" style="-fx-background-radius: 20; -fx-background-color: #0f1221; -fx-text-fill: white;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </TextField>
+
+     <Label fx:id="question2" layoutX="1189.0" layoutY="404.0" prefHeight="52.0" prefWidth="325.0" text="Tujuan Galang Dana">
+      <font>
+         <Font size="33.0" />
+      </font>
+   </Label>
+     <TextField fx:id="answer2" layoutX="1200.0" layoutY="475.0" prefHeight="79.0" prefWidth="425.0" style="-fx-background-radius: 20; -fx-background-color: #0f1221; -fx-text-fill: white;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </TextField>
+     <Button fx:id="nextButton" layoutX="1483.0" layoutY="899.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="59.0" prefWidth="211.0" style="-fx-background-radius: 20; -fx-background-color: #0f1221;" text="Selanjutnya" textFill="WHITE">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+     <Button fx:id="backButton" layoutX="1200.0" layoutY="898.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="59.0" prefWidth="214.0" style="-fx-background-radius: 20; -fx-background-color: #0f1221;" text="Kembali" textFill="WHITE">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+   <Label fx:id="question21" layoutX="1191.0" layoutY="585.0" prefHeight="44.0" prefWidth="215.0" text="Lokasi/Alamat">
+      <font>
+         <Font size="33.0" />
+      </font>
+   </Label>
+   <TextField fx:id="answer21" layoutX="1202.0" layoutY="655.0" prefHeight="79.0" prefWidth="425.0" style="-fx-background-radius: 20; -fx-background-color: #0f1221; -fx-text-fill: white;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </TextField>
+
+</AnchorPane>

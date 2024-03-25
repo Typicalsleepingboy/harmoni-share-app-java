@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.harmonishare.RegistrationFormController">
+    <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/pop.jpg" />
+         </image>
+      </ImageView>
+        <VBox alignment="CENTER" layoutX="1043.0" layoutY="519.0" spacing="20.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+
+            <Label fx:id="nameLabel" style="-fx-font-size: 20px;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+
+            <Label fx:id="confirmationLabel" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="" />
+            <Label fx:id="thankYouLabel" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="" />
+            <Label fx:id="thankHarmoni" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="" textFill="#d2e3f0" wrapText="true" />
+            <Label fx:id="welcomeText" textFill="#d2e3f0" />
+
+        </VBox>
+          <TextField fx:id="nameTextField" layoutX="749.0" layoutY="394.0" prefHeight="82.0" prefWidth="333.0" promptText="Masukkan Nama Anda" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+          <TextField fx:id="phoneNumberTextField" layoutX="1205.0" layoutY="561.0" prefHeight="82.0" prefWidth="333.0" promptText="Masukkan Nomor Hp Anda" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+
+         <Label layoutX="762.0" layoutY="496.0" style="-fx-font-size: 35; -fx-font-weight: bold;" text="Alamat" textFill="#d2e3f0" />
+          <TextField fx:id="addressTextField" layoutX="746.0" layoutY="557.0" prefHeight="82.0" prefWidth="333.0" promptText="Masukkan Alamat Anda" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+
+         <Label layoutX="744.0" layoutY="667.0" style="-fx-font-size: 35; -fx-font-weight: bold;" text="Tempat/Tanggal lahir" textFill="#d2e3f0" />
+          <DatePicker fx:id="datePicker" layoutX="743.0" layoutY="742.0" prefHeight="82.0" prefWidth="333.0" promptText="Pilih Tanggal" style="-fx-background-radius: 5;" />
+
+            <Label alignment="CENTER" layoutX="696.0" layoutY="332.0" prefHeight="55.0" prefWidth="233.0" style="-fx-font-size: 35; -fx-font-weight: bold;" text="Nama" textFill="#d2e3f0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+         <Label layoutX="1207.0" layoutY="333.0" style="-fx-font-size: 35; -fx-font-weight: bold;" text="Nominal Donasi" textFill="#d2e3f0" />
+          <TextField fx:id="donationTextField" layoutX="1200.0" layoutY="394.0" prefHeight="82.0" prefWidth="333.0" promptText="Masukkan Nominal Donasi" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+
+                     <Label layoutX="1204.0" layoutY="504.0" style="-fx-font-size: 35; -fx-font-weight: bold;" text="Masukkan Nomor Hp" textFill="#d2e3f0" />
+          <Button layoutX="1214.0" layoutY="677.0" onAction="#onBackButtonClick" prefHeight="77.0" prefWidth="148.0" style="-fx-background-radius: 20; -fx-background-color: WHITE;" text="Kembali">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="15.0" />
+         </font>
+      </Button>
+          <Button layoutX="1374.0" layoutY="676.0" onAction="#onConfirmButtonClick" prefHeight="77.0" prefWidth="148.0" style="-fx-background-radius: 20; -fx-background-color: WHITE;" text="Konfirmasi">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

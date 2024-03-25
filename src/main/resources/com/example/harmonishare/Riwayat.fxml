@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.harmonishare.Riwayat">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1939.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/memberu.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1658.0" layoutY="968.0" onAction="#onBackButtonmenu" prefHeight="66.0" prefWidth="226.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="Kembali ke menu ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+   <Label fx:id="welcomeText" />
+</AnchorPane>

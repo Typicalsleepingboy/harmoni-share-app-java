@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.harmonishare.ThankController">
+    <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@image/thank.jpg" />
+        </image>
+    </ImageView>
+     <Button layoutX="1396.0" layoutY="905.0" onAction="#onBackButtonClick" prefHeight="66.0" prefWidth="178.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="Keluar">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+
+     <Label fx:id="confirmationLabel" layoutX="407.0" layoutY="507.0" prefHeight="73.0" prefWidth="1093.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="" textFill="#d2e3f0">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+     <Label fx:id="thankYouLabel" layoutX="496.0" layoutY="592.0" prefHeight="73.0" prefWidth="1093.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="" textFill="#d2e3f0">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+     <Label fx:id="thankHarmoni" layoutX="491.0" layoutY="628.0" prefHeight="171.0" prefWidth="1109.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="" textFill="#d2e3f0" wrapText="true">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+     <Label fx:id="welcomeText" layoutX="501.0" layoutY="772.0" prefHeight="77.0" prefWidth="1094.0" textFill="#d2e3f0">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+   <Button layoutX="1138.0" layoutY="905.0" onAction="#onBackButtonmenu" prefHeight="66.0" prefWidth="226.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="Kembali ke menu ">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+</AnchorPane>
